@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>เมนูอาหารประจำบ้าน</title>
+  
+  <!-- แท็กสำหรับรองรับการเพิ่มลงหน้าจอมือถือ (Web App Icon) -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="เมนูอาหาร">
+  <link rel="apple-touch-icon" href="https://fav.farm/🍱">
+  <link rel="icon" href="https://fav.farm/🍱">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* ป้องกัน สกอร์ลบาร์ ซ้ำซ้อน */
+      background-color: #f8fafc;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- นำ URL ของ Web App จาก Google Apps Script มาใส่ตรง src -->
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbzleAbqY0_Z3_ta_wJ3IpmyKCt4Zv4_TTitePPqORrdgMIMLKeYS5ShdF_lBg7Uds04YQ/exec" 
+    allow="geolocation; microphone; camera">
+  </iframe>
+
+</body>
+</html>
